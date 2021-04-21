@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+## Tic Tac Toe
+Fully responsive two player *tic-tac-toe* game built with react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+### Live demo
+https://accelerator-one.github.io/tic-tac-toe/
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+### Device testing
+Following smartphones are tested for breakpoints :
+- Moto G4
+- Pixel 2 ( XL )
+- iPhone 5/SE
+- iPhone 6/7/8 ( Plus )
+- iPhone X
+- iPad ( Pro )
+- Surface Duo
+- Galaxy Fold
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Screenshots
+<br/>
 
-### `npm test`
+<img src="screenshots/progress.png" style="width:480px" alt="progress">  
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="screenshots/won.png" style="width:480px" alt="won">  
+<br/>
 
-### `npm run build`
+<img src="screenshots/draw.png" style="width:480px" alt="draw">  
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Description
+- Game is provided with 3 X 3 grid for 2 players.  
+- Following are the working aspects of this project :  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Player turn will be displayed at the top.
+    - For every odd click '**O**' will be assigned and for every even click '**X**' will be assigned on the box.
+    - Player cannot mark a box twice.
+    
+    - A player wins the game when any of the position is satisfied on the board.  
+      ( *3 horizontal*, *3 vertical*, *2 cross-sets* )
+    - Once the winning condition is satisfied, the winner is notified.
+    - Match ends with a draw if all the boxes are filled and no player satisfies the winning criteria.
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prequisites
+Make sure you have below development dependencies installed on your CLI environment :
+- npm
+- node
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br/>
 
 ### Deployment
+If you want to deploy this project on your hosting provider, follow the steps below :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Clone the repository
+  ```bash
+  git clone https://github.com/Accelerator-One/tic-tac-toe.git
+  ```
 
-### `npm run build` fails to minify
+- Install project dependencies
+  ```bash
+  npm install
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Running the project locally
+  ```bash
+  npm start
+  ```    
+
+- Apply tweaks if needed and generate the build
+  ```bash
+  npm run build
+  ```
+
+<br/>
+
+### Issues
+In case of any problems during implementation, file them under *Issues* section of this repository
